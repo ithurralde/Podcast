@@ -84,7 +84,7 @@ header {
         margin-top: 15%;
     }  
     /* -------------------------- Fin Menu hamburguesa -------------------------- */
-    
+
 nav {
     background: #0000EC;
     width: inherit;
@@ -595,8 +595,11 @@ footer ul img {
             font-size: 48px;
             color: #060A24;
             letter-spacing: 0;
-            margin-left: 10%;
             padding-bottom: 40px;
+        }
+
+        .sectImagenes a {
+            margin-left: 10%;
         }
 
         
