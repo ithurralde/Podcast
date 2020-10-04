@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&display=swap');
+*{
+    margin : 0;
+    border : 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "IBMPlexMono";
+    src: url("IBMPlexMono/IBMPlexMono-Regular.ttf");
+    src: url("IBMPlexMono/IBMPlexMono-Medium.ttf");
+    font-family: "IBMPlexSans";
+    src: url("IBMPlexSans/IBMPlexSans-Medium.ttf");
+    src: url("IBMPlexSans/IBMPlexSans-Regular.ttf");
+    src: url("IBMPlexSans/IBMPlexSans-SemiBold.ttf");
+  }
+/* -------------------------- Mobile first -------------------------- */
+    /* Parrafos */
+    section p {
+        font-family: IBMPlexMono;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+/* -------------------------- Header -------------------------- */
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+    /* -------------------------- Menu hamburguesa -------------------------- */
+    #chkbox-menu {
+        display: none;
+    }
+    .div-menu {
+        width: inherit;
+    }
+    .menu-icon {
+        position: relative;
+        float: right;
+        margin: 4%;
+        margin-right: 10%;
+    }
+    .menu-icon span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #060A24;;
+        border-radius: 16px;
+        position: absolute;
+        transform: rotate(0deg);
+        transform: all .25s;
+        transform-origin: left center;
+        will-change: transform, opacity;
+    }
+    .menu-icon span:nth-child(1){
+        top: 0;
+    }
+    .menu-icon span:nth-child(2){
+        top: 9px;
+    }
+    .menu-icon span:nth-child(3){
+        top: 18px;
+    }
+    #chkbox-menu:checked ~ /*.label*/ .menu-icon span:nth-child(1){
+        transform: rotate(45deg);
+        width: 25px;
+    }
+    #chkbox-menu:checked ~  /*.label*/ .menu-icon span:nth-child(2){
+        opacity: 0 ;
+    }
+    #chkbox-menu:checked ~  /*.label*/ .menu-icon span:nth-child(3){
+        transform: rotate(-45deg);
+        width: 25px;
+    }
+        
+    .menu {
+        margin-top: -1000%;
+        transition: all 0.25s;
+        width: inherit;
+    }
+    #chkbox-menu:checked ~ .menu {
+        margin-top: 15%;
+    }  
+    /* -------------------------- Fin Menu hamburguesa -------------------------- */
+/* .menu ul li {
+    padding: 10px;
+} */
+nav {
+    background: #0000EC;
+    width: inherit;
+    margin-left : -10%;
+    padding-right: 7%;
+    font-family: IBMPlexMono;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+nav ul p {
+    color: #FFFFFF;
+    height: 5px;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.logo {
+    align-self: flex-start;
+    padding: 3% 4%;
+}
+header h1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15% 5% 0 5%;
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+.part1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.part2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.world {
+    padding:  0px 7px;
+    text-decoration: line-through;
+}
+.dot {
+    color: #060A24;
+}
+.cabecera {
+    display: flex;
+    flex-flow: column wrap;
+}
+header p {
+    font-family: IBMPlexMono;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 5% 5%;
+    
+}
+/* -------------------------- Fin header -------------------------- */
+/* -------------------------- Main -------------------------- */
+    /* -------------------------- input -------------------------- */
+    .boton {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        /* padding: 1%; */
+        /* margin-left: 10%; */
+        margin: 10%;
+        /* padding: 25px 0; */
+        background: #00F3BB;
+    }
+    .boton:hover {
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    }
+    .boton p {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+    }
+    a {
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        /* justify-content: center; */
+    }
+    input {
+        /* width: 280px; */
+        /* padding: 10% 0%; */
+        width: 100%;
+        font-weight: bold;
+        background: transparent;
+        font-family: IBMPlexMono-Medium;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    /* -------------------------- fin input -------------------------- */
+    /* -------------------------- iframes spotify -------------------------- */
+    .fondoAzul {
+        background: linear-gradient(175deg, transparent 67px,  #0000FF 68px, #0000A3);
+        background-repeat: no-repeat;
+        /* background-size: 100% 87%; */
+    }
+    .section-iframes h1 {
+        font-family: IBMPlexSans-Medium;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding: 100px 45.9% 4% 5%;
+        font-weight: 100;
+    }
+    .section-iframes h1:hover{
+        font-family: IBMPlexMono-Medium;
+        font-size: 36px;
+        color: #00F3BB;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding: 100px 45.9% 4% 5%;
+    }
+    .frames{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    iframe {
+        width: 93.1%;
+        height: 152px;
+        padding: 2px;
+    }
+    .fondoAzul .imagenes img{
+        padding-top: 50px;
+    }
+    /* -------------------------- fin iframes spotify -------------------------- */
+    /* -------------------------- Terminar fondo azul --------------------------  */
+    .finFondoAzul {
+        margin-top: -145%;
+        padding-bottom: 145%;
+        background: linear-gradient(175deg, transparent 67px , white 68px);
+    
+    }
+    /* -------------------------- Fin terminar fondo azul --------------------------  */
+    /* -------------------------- preImagenes --------------------------  */
+    .preImagenes h2 {
+        font-family: IBMPlexSans;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+        padding: 10px;
+        padding-left: 5%;
+    }
+    .preImagenes p{
+        font-family: IBMPlexMono;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        padding-top: 10px;
+        padding-left: 5%;
+    }
+    /* -------------------------- Fin preImagenes --------------------------  */
+    /* -------------------------- imagenes -------------------------- */
+    .sectImagenes h2{
+        font-family: IBMPlexSans;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+        padding: 40px 0 10px 5%;
+        width: 90%;
+    }
+    .imagenes img{
+        width: 100%;
+        line-height: 0;
+    }
+
+    .sectImagenes .imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -------------------------- fin imagenes -------------------------- */
+
+    /* -------------------------- svg -------------------------- */
+    .sectionSvg h2 {
+        font-family: IBMPlexSans;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+        padding: 40px 0 10px 5%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .svg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-weight: bold;
+        align-content: center;
+    }
+    .svg img {
+        padding-top: 25px;
+    }
+    .svg li{
+        width: 100px;
+        align-self: center;
+    }
+    .svg .tituloSvg {
+        width: 235px;
+        font-family: IBMPlexSans-SemiBold;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    /* -------------------------- fin svg -------------------------- */
+    /* -------------------------- ultima section --------------------------*/ 
+    .ultimaSection {
+        height: 341px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 20%;
+        background: linear-gradient(175deg , transparent 67px,  #0000FF 68px,  #0000A3);
+    }
+    .ultimaSection h1 {
+        font-family: IBMPlexSans-Medium;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 42px;
+    }
+
+    .ultimaSection .boton:hover{
+        background: #00F3BB;
+    }
+
+    .ultimaSection p{
+        font-family: IBMPlexMono-Medium;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 22px;
+        padding:25px 0;
+    }
+    /* -------------------------- fin ultima section --------------------------*/ 
+/* -------------------------- Fin main -------------------------- */
+/* -------------------------- Footer --------------------------*/
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 8%;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 10%;
+}
+footer ul img {
+    width: 20px;
+    height: 20px;
+}
+/* -------------------------- Fin footer -------------------------- */
+
+
+
+
+
+
+/* -------------------------- Tablet min 320px -------------------------- */
+/* @media only screen and (min-width: 320px){
+
+} */
+
+/* -------------------------- Fin tablet -------------------------- */
+
+
+/* -------------------------- Desktop min 768px -------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+
+    /* -------------------------- header -------------------------- */
+        /* -------------------------- Menu hamburguesa -------------------------- */
+        .menu-icon {
+            display: none;
+        }
+        /* -------------------------- Fin Menu hamburguesa -------------------------- */
+
+        nav ul p {
+            color: #060A24;
+            height: 5px;
+        }
+        
+        /* -------------------------- menu -------------------------- */
+
+        .menu {
+            margin-top: 0;
+            background: white;
+            margin-left : 0%;
+            padding-right: 0;
+            width: 100%;
+
+            font-family: IBMPlexMono;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .menu ul li {
+            padding-right: 50px;
+            width: 100px;
+        }
+        .menu ul li a p{
+            height: 20px;
+        }
+
+        .logoSection {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            padding: 33px 0 0 30px;
+        }
+
+        .div-menu {
+            width: 600px;
+            padding-right: 50px;
+            padding-top: 30px;
+        }
+
+        /* -------------------------- Fin menu -------------------------- */
+
+        /* -------------------------- cabecera -------------------------- */
+
+        .cabecera {
+            padding-left: 120px;
+            width: 100%;
+        }
+
+        .cabecera h1 {
+            font-family: IBMPlexSans;
+            font-size: 64px;
+            color: #060A24;
+            letter-spacing: 0;
+            padding-top: 7%;
+        }
+        .part1 {
+            height: 60px;
+        }
+        .world {
+            font-family: IBMPlexSans;
+            font-size: 64px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+
+        .dot {
+            color: #0000EC;
+        }
+
+        .cabecera p {
+            font-family: IBMPlexMono;
+            font-size: 20px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
+
+            padding-top: 20px;
+            width: 600px;
+        }
+
+        /* -------------------------- Fin cabecera -------------------------- */
+
+    /* -------------------------- Fin header -------------------------- */
+
+    /* -------------------------- Main -------------------------- */
+        /* -------------------------- Boton -------------------------- */
+
+        input {
+            margin: 0;
+        }
+        a {
+            margin: 0;
+            width: 100%;
+        }
+        .boton {
+            padding: 0;
+            margin: 0;
+            width: 250px;
+            height: 60px;
+            margin-left: 12.5%;
+            background: #00F3BB;
+            }
+
+            .boton a p {
+                align-self: center;
+                padding:0;
+            }
+        /* -------------------------- Fin boton -------------------------- */
+
+        /* -------------------------- iframes spotify -------------------------- */
+
+        .fondoAzul {
+            background: linear-gradient(175deg, transparent 167px,  #0000FF 168px, #0000A3);
+            background-repeat: no-repeat;
+            /* background-size: 100% 87%; */
+        }
+
+        .section-iframes h1 {
+            padding-top: 200px;
+            padding-bottom: 0px;
+        }
+
+        .section-iframes h1:hover {
+            padding-top: 200px;
+            padding-bottom: 0px;
+        }
+
+        .section-iframes .imagenes {
+            /* width: 20%; */
+            width: 350px;
+            margin-left: 16%;
+        }
+
+        .frames {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        iframe {
+            width: 35%;
+            height: 232px;
+            padding-top: 60px;
+        }
+
+        /* -------------------------- Fin iframes spotify -------------------------- */
+
+        /* -------------------------- Terminar fondo azul --------------------------  */
+        .finFondoAzul {
+            /* margin-top: -33%;
+            padding-bottom: 33%; */
+            margin-top: -600px;
+            padding-bottom: 600px;
+            background: linear-gradient(175deg, transparent 167px , white 168px);
+        }
+
+        /* -------------------------- Fin Terminar fondo azul --------------------------  */
+    
+        /* -------------------------- preImagenes --------------------------  */
+            
+        .preImagenes {
+            width: 30%;
+            float: right;
+            margin: -365px 15% 0 0;
+            /* margin: -22% 20% 0 0; */
+        } 
+
+        .preImagenes h2 {
+            font-family: IBMPlexSans;
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+        .preImagenes p {
+            font-family: IBMPlexMono;
+            font-size: 18px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+
+        /* -------------------------- Fin preImagenes --------------------------  */
+
+        /* -------------------------- sectImagenes -------------------------- */
+        .sectImagenes {
+            width: inherit;
+            margin-top: 100px;
+        }
+        .sectImagenes h2 {
+            font-family: IBMPlexSans;
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+            margin-left: 10%;
+            padding-bottom: 40px;
+        }
+
+        
+        .sectImagenes .imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+
+        .sectImagenes img {
+            width: 33.33%;
+        }
+
+        /* -------------------------- Fin sectImagenes -------------------------- */ 
+
+        /* -------------------------- svg -------------------------- */ 
+        .sectionSvg h2 {
+            font-family: IBMPlexSans;
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+            font-weight: 100;
+            /* padding: 40px 0 10px 5%; */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+        }
+        .svg {
+            display: flex;
+            flex-wrap: wrap; 
+            flex-direction: column; 
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 25px;
+            height: 202px;
+        }
+        .svg img {
+            padding-top: 25px;
+        }
+        .svg li{
+            width: 100px;
+        }
+        .svg .tituloSvg {
+            width: 235px;
+            font-family: IBMPlexSans-SemiBold;
+            font-size: 24px;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+            align-self: flex-end;
+            margin-top: 15px;
+        }
+
+        
+        /* -------------------------- Fin svg -------------------------- */ 
+
+        /* -------------------------- ultima section --------------------------*/ 
+        .ultimaSection {
+            height: 341px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 20%;
+            background: linear-gradient(175deg , transparent 167px,  #0000FF 168px,  #0000A3);
+        }
+        .ultimaSection h1 {
+            font-family: IBMPlexSans-Medium;
+            font-size: 48px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            font-weight: 100;
+        }
+        .ultimaSection .boton{
+            width: 345px;
+            height: 56px;
+            padding: 0;
+            margin-left: 0;
+        }
+        .ultimaSection a {
+            width: 100%;
+        }
+        .ultimaSection p {
+            align-self: center;
+        }
+        .ultimaSection .boton:hover{
+            background: #00F3BB;
+        }
+        /* .ultimaSection .boton a{
+            margin-left: 50px;
+        } */
+   
+        /* -------------------------- fin ultima section --------------------------*/ 
+
+    /* -------------------------- Fin Main -------------------------- */
+
+    /* -------------------------- footer -------------------------- */
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer p {
+        padding: 36px 0 31px 50px;
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+
+    footer ul {
+        padding: 0 80px 0 0;
+        width: 15%;
+        align-self:center ;
+    }
+    footer ul li{
+        height: 20px;
+    }
+
+    /* -------------------------- Fin footer -------------------------- */
+
+}
+
+/* -------------------------- Fin desktop -------------------------- */
