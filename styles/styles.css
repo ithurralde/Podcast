@@ -103,6 +103,15 @@ nav ul p {
     height: 5px;
 }
 
+nav ul a p:hover {
+    font-family: IBMPlexMono-Medium;
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #00F3BB;
+    letter-spacing: 0;
+    line-height: 28px;
+    }
+
 .logoSection {
     display: flex;
     flex-direction: row;
