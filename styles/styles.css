@@ -386,7 +386,7 @@ footer ul img {
 
 
 /* -------------------------- Tablet min 320px -------------------------- */
- @media only screen and (min-width: 768px) and (max-width: 1220px){
+ @media only screen and (min-width: 768px) /*and (max-width: 1220px)*/{
 
     /* -------------------------- Menu hamburguesa -------------------------- */
         nav ul{
@@ -597,31 +597,10 @@ footer ul img {
             /* background-size: 100% 87%; */
         }
 
-        .section-iframes h1 {
-            padding-top: 200px;
-            padding-bottom: 0px;
-        }
-
-        .section-iframes h1:hover {
-            padding-top: 200px;
-            padding-bottom: 0px;
-        }
-
         .section-iframes .imagenes {
             /* width: 20%; */
             width: 350px;
             margin-left: 16%;
-        }
-
-        .frames {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        iframe {
-            width: 35%;
-            height: 232px;
-            padding-top: 60px;
         }
 
         /* -------------------------- Fin iframes spotify -------------------------- */
